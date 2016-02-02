@@ -10,7 +10,7 @@ import UIKit
 
 class BusinessCell: UITableViewCell {
 
-    @IBOutlet weak var thumbImageView: UIView!
+    @IBOutlet weak var thumbImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
     @IBOutlet weak var ratingImageView: UIImageView!
@@ -18,10 +18,27 @@ class BusinessCell: UITableViewCell {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var categoriesLabel: UILabel!
     
-    
+    var business: Business! {
+        //if business is set, we use this observer
+        didSet {
+            //whenever business changes
+            //good encapsulation. Don't want our viewController do do this setting
+            nameLabel.text = business.name
+            thumbImageView.setImageWithURL(business.imageURL!)
+            categoriesLabel.text = business.categories
+            addressLabel.text = business.address
+            reviewsCountLabel.text = "\(business.reviewCount!) Reviews"
+            ratingImageView.setImageWithURL(business.ratingImageURL!)
+            distanceLabel.text = business.distance //formatted with miles text
+            
+        }
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        //rounded edges
+        thumbImageView.layer.cornerRadius = 3
+        thumbImageView.clipsToBounds = true
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2xI-yr-O5N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="U4M-VF-feT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Businesses View Controller-->
+        <!--Yelp-->
         <scene sceneID="5L9-Uz-lNK">
             <objects>
                 <viewController id="2xI-yr-O5N" customClass="BusinessesViewController" customModule="Yelp" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessCell" rowHeight="115" id="sTx-gN-eoM" customClass="BusinessCell" customModule="Yelp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="115"/>
+                                        <rect key="frame" x="0.0" y="92" width="320" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sTx-gN-eoM" id="KNv-UE-0tF">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="114"/>
@@ -79,8 +79,7 @@
                                             <outlet property="nameLabel" destination="MaI-uU-Rfp" id="COd-df-WS2"/>
                                             <outlet property="ratingImageView" destination="wv7-c1-gqs" id="QRa-o6-y9k"/>
                                             <outlet property="reviewsCountLabel" destination="nr0-oe-Ge0" id="vsJ-Xg-5E9"/>
-                                            <outlet property="thumbImageView" destination="KNv-UE-0tF" id="N5k-29-axf"/>
-                                            <outlet property="thumbView" destination="KNv-UE-0tF" id="Pu6-hQ-wM6"/>
+                                            <outlet property="thumbImageView" destination="3GJ-x3-ciM" id="gJe-lp-rbx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -94,11 +93,30 @@
                             <constraint firstItem="FJ6-NX-5ik" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" id="nYr-Ma-C0M"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Yelp" id="pyp-iG-ddz"/>
                     <connections>
                         <outlet property="tableView" destination="FJ6-NX-5ik" id="jSA-h5-BBp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgb-4b-F1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1413" y="338"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zu9-ZW-kza">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U4M-VF-feT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wv2-Og-R3L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2xI-yr-O5N" kind="relationship" relationship="rootViewController" id="W9S-15-4Dl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7s-II-zyc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="953" y="338"/>
         </scene>
