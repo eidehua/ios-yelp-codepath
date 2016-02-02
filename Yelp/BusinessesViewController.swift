@@ -8,13 +8,17 @@
 
 import UIKit
 
-class BusinessesViewController: UIViewController {
+class BusinessesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var businesses: [Business]!
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tableView.delegate = self
+        tableView.dataSource = self
         Business.searchWithTerm("Thai", completion: { (businesses: [Business]!, error: NSError!) -> Void in
             self.businesses = businesses
         
@@ -41,6 +45,18 @@ class BusinessesViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if businesses != nil {
+            return businesses!.count
+        }
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("BusinessCell", forIndexPath: indexPath) as! BusinessCell
+        return cell
+    }
+    
     /*
     // MARK: - Navigation
 

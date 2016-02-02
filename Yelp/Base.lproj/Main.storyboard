@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="115" id="sTx-gN-eoM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BusinessCell" rowHeight="115" id="sTx-gN-eoM" customClass="BusinessCell" customModule="Yelp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sTx-gN-eoM" id="KNv-UE-0tF">
@@ -72,6 +72,16 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="2rK-ce-tSC" id="65H-9y-YB6"/>
+                                            <outlet property="categoriesLabel" destination="36I-CB-2vU" id="1Ie-uR-shk"/>
+                                            <outlet property="distanceLabel" destination="kIb-ME-DgH" id="pOA-3Q-mm6"/>
+                                            <outlet property="nameLabel" destination="MaI-uU-Rfp" id="COd-df-WS2"/>
+                                            <outlet property="ratingImageView" destination="wv7-c1-gqs" id="QRa-o6-y9k"/>
+                                            <outlet property="reviewsCountLabel" destination="nr0-oe-Ge0" id="vsJ-Xg-5E9"/>
+                                            <outlet property="thumbImageView" destination="KNv-UE-0tF" id="N5k-29-axf"/>
+                                            <outlet property="thumbView" destination="KNv-UE-0tF" id="Pu6-hQ-wM6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -84,6 +94,9 @@
                             <constraint firstItem="FJ6-NX-5ik" firstAttribute="top" secondItem="XhR-oz-92f" secondAttribute="top" id="nYr-Ma-C0M"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="FJ6-NX-5ik" id="jSA-h5-BBp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgb-4b-F1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
