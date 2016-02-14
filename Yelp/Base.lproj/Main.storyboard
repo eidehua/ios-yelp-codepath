@@ -48,6 +48,12 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai, Seafood, Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36I-CB-2vU">
+                                                    <rect key="frame" x="88" y="69" width="125" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" red="0.48860847513089001" green="0.48860847513089001" blue="0.48860847513089001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="469 Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nr0-oe-Ge0">
                                                     <rect key="frame" x="179" y="29" width="78" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -60,22 +66,16 @@
                                                     <color key="textColor" red="0.48860847513089001" green="0.48860847513089001" blue="0.48860847513089001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, Mission Bay" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rK-ce-tSC">
-                                                    <rect key="frame" x="88" y="52" width="164" height="16"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="0.07 mi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIb-ME-DgH">
                                                     <rect key="frame" x="267" y="8" width="45" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" red="0.48860847513089001" green="0.48860847513089001" blue="0.48860847513089001" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thai, Seafood, Salad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36I-CB-2vU">
-                                                    <rect key="frame" x="88" y="69" width="125" height="16"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88 Division St, Mission Bay" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rK-ce-tSC">
+                                                    <rect key="frame" x="88" y="52" width="224" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                                    <color key="textColor" red="0.48860847513089001" green="0.48860847513089001" blue="0.48860847513089001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -99,6 +99,7 @@
                                                 <constraint firstItem="wv7-c1-gqs" firstAttribute="top" secondItem="MaI-uU-Rfp" secondAttribute="bottom" constant="3" id="ih0-sn-Cxj"/>
                                                 <constraint firstItem="3GJ-x3-ciM" firstAttribute="leading" secondItem="KNv-UE-0tF" secondAttribute="leading" constant="8" id="kug-fa-O6T"/>
                                                 <constraint firstItem="kIb-ME-DgH" firstAttribute="leading" secondItem="MaI-uU-Rfp" secondAttribute="trailing" constant="8" id="nR4-C1-B34"/>
+                                                <constraint firstAttribute="trailing" secondItem="2rK-ce-tSC" secondAttribute="trailing" constant="8" id="y5h-NU-wlJ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
