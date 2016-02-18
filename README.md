@@ -33,6 +33,8 @@ Business.searchWithTerm("Restaurants", sort: .Distance, categories: ["asianfusio
 }
 ```
 
+Want more advanced queries!
+
 # Project 3 - *Location Location Location*
 
 **Name of your app** is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
