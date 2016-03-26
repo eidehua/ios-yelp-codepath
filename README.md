@@ -41,7 +41,7 @@ Want more advanced queries!
 
 Time spent: **2+1.5+.5** hours spent in total
 
-## User Stories
+## User Storie
 
 The following **required** functionality is completed:
 
