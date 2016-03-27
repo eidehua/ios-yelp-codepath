@@ -41,8 +41,8 @@ Want more advanced queries!
 
 Time spent: **2+1.5+.5** hours spent in total
 
-## User Storie
-
+## User Stories
+What the user should be able to interact with
 The following **required** functionality is completed:
 
 - [ ] Table rows for search results should be dynamic height according to the content height.
